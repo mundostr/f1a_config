@@ -14,7 +14,7 @@ const checkIfInstalled = () => {
 
 // MAIN
 const INSTALLABLE = true;
-const socket = new WebSocket('http://192.168.4.1:81');
+const socket = new WebSocket('ws://192.168.4.1:81');
 const installButton = document.getElementById('install-button');
 const configForm = document.getElementById('config-form');
 

@@ -1,5 +1,5 @@
-const CACHE_NAME = 'v3';
-const urlsToCache = ['/', '/index.html', '/index.css', '/index.js'];
+const CACHE_NAME = 'v4';
+const urlsToCache = ['/', '/index.html', '/index.css', '/index.js', '/bootstrap.bundle.min.js', 'bootstrap.min.css'];
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
