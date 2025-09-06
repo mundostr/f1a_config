@@ -13,99 +13,93 @@
     
     <body>
         <div class="container-fluid p-5">
-            <div class="row">
+            <!-- <div class="row">
                 <button id="install-button" class="btn btn-success" style="width: 100%;">Instalar</button>
-            </div>
+            </div> -->
 
             <div class="row mt-4">
                 <h1><b>F1A Config</b></h1>
             </div>
 
             <div class="row mt-4">
-                <!-- Form config -->
-                <form id="config-form" class="row">
-                    <div class="bg-group mb-5 p-5">
-                        <div class="col-md-12 mb-3">
-                            <label class="form-check-label" for="stabServoInverted">Invertir servo ESTABILIZADOR</label>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input form-control-check" type="checkbox" role="switch" id="stabServoInverted" name="stabServoInverted">
-                            </div>
+                <form id="config-form" class="row bg-group">
+                    <div class="col-md-12 mb-5">
+                        <label class="form-check-label" for="stabServoInverted">Invertir servo ESTABILIZADOR</label>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" role="switch" class="form-check-input form-control-check" id="stabServoInverted" name="stabServoInverted">
                         </div>
                     </div>
 
-                    <div class="bg-group p-5">
-                        <h3 class="mb-5">Tiempos</h3>
-                        <div class="col-md-12 mb-3">
-                            <label for="startDelay">Demora INICIO (ms)</label>
-                            <input type="number" class="form-control form-control-number" id="startDelay" name="startDelay">
-                        </div>
+                    <h3>Tiempos</h3>
 
-                        <div class="col-md-12 mb-3">
-                            <label for="takeoffTime">DESPEGUE (ms)</label>
-                            <input type="number" class="form-control form-control-number" id="takeoffTime" name="takeoffTime">
-                        </div>
+                    <div class="col-md-12 mb-3">    
+                        <label for="startDelay">Demora INICIO (ms)</label>
+                        <input type="number" class="form-control form-control-number" id="startDelay" name="startDelay">
+                    </div>
 
-                        <div class="col-md-12 mb-3">
-                            <label for="climbTime">TREPADA (ms)</label>
-                            <input type="number" class="form-control form-control-number" id="climbTime" name="climbTime">
-                        </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="takeoffTime">DESPEGUE (ms)</label>
+                        <input type="number" class="form-control form-control-number" id="takeoffTime" name="takeoffTime">
+                    </div>
 
-                        <div class="col-md-12 mb-3">
-                            <label for="transitionTime">TRANSICION (ms)</label>
-                            <input type="number" class="form-control form-control-number" id="transitionTime" name="transitionTime">
-                        </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="climbTime">TREPADA (ms)</label>
+                        <input type="number" class="form-control form-control-number" id="climbTime" name="climbTime">
+                    </div>
 
-                        <div class="col-md-12 mb-3">
-                            <label for="flightTime">VUELO (segs!)</label>
-                            <input type="number" class="form-control form-control-number" id="flightTime" name="flightTime">
-                        </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="transitionTime">TRANSICION (ms)</label>
+                        <input type="number" class="form-control form-control-number" id="transitionTime" name="transitionTime">
+                    </div>
+
+                    <div class="col-md-12 mb-5">
+                        <label for="flightTime">VUELO (segs!)</label>
+                        <input type="number" class="form-control form-control-number" id="flightTime" name="flightTime">
                     </div>
                     
-                    <div class="bg-group mt-5 p-5">
-                        <h3 class="mb-5">Angulos (grados)</h3>
+                    <h3>Angulos (grados)</h3>
 
-                        <div class="col-md-12 mb-3">
-                            <label for="stabServoOffset">Desplazamiento servo</label>
-                            <input type="number" class="form-control form-control-number" id="stabServoOffset" name="stabServoOffset">
-                        </div>
-
-                        <div class="col-md-12 mb-3">
-                            <label for="towAngle">REMOLQUE</label>
-                            <input type="number" class="form-control form-control-number" id="towAngle" name="towAngle">
-                        </div>
-    
-                        <div class="col-md-12 mb-3">
-                            <label for="circularAngle">CIRCULAR</label>
-                            <input type="number" class="form-control form-control-number" id="circularAngle" name="circularAngle">
-                        </div>
-    
-                        <div class="col-md-12 mb-3">
-                            <label for="takeoffAngle">DESPEGUE</label>
-                            <input type="number" class="form-control form-control-number" id="takeoffAngle" name="takeoffAngle">
-                        </div>
-    
-                        <div class="col-md-12 mb-3">
-                            <label for="climbAngle">TREPADA</label>
-                            <input type="number" class="form-control form-control-number" id="climbAngle" name="climbAngle">
-                        </div>
-    
-                        <div class="col-md-12 mb-3">
-                            <label for="transitionAngle">TRANSICION</label>
-                            <input type="number" class="form-control form-control-number" id="transitionAngle" name="transitionAngle">
-                        </div>
-    
-                        <div class="col-md-12 mb-3">
-                            <label for="flightAngle">VUELO</label>
-                            <input type="number" class="form-control form-control-number" id="flightAngle" name="flightAngle">
-                        </div>
-    
-                        <div class="col-md-12 mb-3">
-                            <label for="dtAngle">DESTERMALIZADO</label>
-                            <input type="number" class="form-control form-control-number" id="dtAngle" name="dtAngle">
-                        </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="stabOffset">Desplazamiento servo</label>
+                        <input type="number" class="form-control form-control-number" id="stabOffset" name="stabOffset">
                     </div>
 
-                    <div class="col-12 mt-5">
+                    <div class="col-md-12 mb-3">
+                        <label for="towAngle">REMOLQUE</label>
+                        <input type="number" class="form-control form-control-number" id="towAngle" name="towAngle">
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <label for="circularAngle">CIRCULAR</label>
+                        <input type="number" class="form-control form-control-number" id="circularAngle" name="circularAngle">
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <label for="takeoffAngle">DESPEGUE</label>
+                        <input type="number" class="form-control form-control-number" id="takeoffAngle" name="takeoffAngle">
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <label for="climbAngle">TREPADA</label>
+                        <input type="number" class="form-control form-control-number" id="climbAngle" name="climbAngle">
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <label for="transitionAngle">TRANSICION</label>
+                        <input type="number" class="form-control form-control-number" id="transitionAngle" name="transitionAngle">
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <label for="flightAngle">VUELO</label>
+                        <input type="number" class="form-control form-control-number" id="flightAngle" name="flightAngle">
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <label for="dtAngle">DESTERMALIZADO</label>
+                        <input type="number" class="form-control form-control-number" id="dtAngle" name="dtAngle">
+                    </div>
+
+                    <div class="col-12 mt-5 pb-3">
                         <button type="submit" class="btn btn-success">Guardar</button>
                     </div>
                 </form>
